@@ -1,0 +1,27 @@
+html, body {
+    overflow-y: visible;
+}
+
+:root {
+    --rojo: #e50914
+    --fondo: #141414
+}
+* {
+    margin: 100;
+    padding: 100;
+    box-sizing: border-box;
+}
+body {
+    background: /*rgba(145, 39, 39, 0.656);*/linear-gradient(120deg,#2980b9,#8e44ad);
+    font-family: 'Open Sans', sans-serif;
+}
+.contenedor {
+    width: 90%;
+    margin: auto;
+}
+/* ponemos separacion en los bordes*/
+@media screen and (max-width: 100px){
+    .nav{
+    flex-direction: column;
+    }
+}

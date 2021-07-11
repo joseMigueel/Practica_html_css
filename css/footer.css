@@ -1,0 +1,31 @@
+.piedepagina{
+    background: #444444;
+    padding: 20px 0;
+}
+.piedepagina .contenedor{
+    display: table;
+}
+.piedepagina small{
+    display:table-cell;
+    color: #fff;
+}
+.piedepagina nav{
+    display: table-cell;
+    text-align: right;
+}
+.piedepagina nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.piedepagina nav ul li{
+    display: inline-block;
+    padding-left: 10px;
+}
+.piedepagina nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.piedepagina nav ul li a:hover{
+    text-decoration: underline;
+}

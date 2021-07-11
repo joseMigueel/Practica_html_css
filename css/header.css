@@ -1,0 +1,56 @@
+
+
+.encabezado{
+    background: /*#a72f2f*/ linear-gradient(120deg,#0f5570,#d2a2ee);
+    overflow: hidden;
+
+}
+.logo{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    color: rgb(230, 172, 66);
+    font-size: 48px;
+    
+    
+}
+.encabezado nav{
+    float: right;
+}
+.encabezado nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.encabezado nav ul li{
+    display: inline-block;
+    margin-right: -4px;
+}
+.encabezado nav ul li a{
+    display: block;
+    color: #fff;
+    padding: 28px;
+    border-left: 1px solid #696969;
+    text-decoration: none;
+}
+.encabezado nav ul li a:hover{
+    background:#a72f2f;
+}
+.header-buscar {
+    background-color:rgb(191, 191, 240);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 0.6rem;
+    align-self: center;
+    margin: 0 1rem;
+    width: inherit;
+    max-width: 300px;
+    overflow: hidden;
+    
+}
+.header-buscar::placeholder{
+    color: rgb(0, 81, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    overflow: inherit;
+}

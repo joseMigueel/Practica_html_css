@@ -1,0 +1,304 @@
+html{
+    background: linear-gradient(120deg,#2980b9,#8e44ad);
+}
+
+/*--- --- ---Pelicula Principal, SHEREK --- --- ---*/
+.pelicula-principal{
+    font-size: 16px;
+    min-height: 80px;
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%) , url(../img/sherk.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: end;
+    margin-left: 180px;
+    margin-right: 180px;
+    box-sizing: border-box;
+    width: 70%;
+}
+.pelicula-principal .contenedor{
+    margin: 0 auto;
+    margin-bottom: 6.25em;
+}
+
+.pelicula-principal .titulo {
+    font-weight: 600;
+    font-size: 3.12em;
+    margin-bottom: 0.04;
+}
+.pelicula-principal .descripcion {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 1.25em;
+}
+.pelicula-principal .boton{
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color:#fff;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;    
+}
+.pelicula-principal .boton:hover {
+    background: #fff;
+    color: #000;
+}
+.pelicula-principal .boton i {
+    margin-right: 1.25em;
+}
+/*-----detalles.html pelicula ------*/
+
+.pelicula{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-family:sans-serif;
+}
+.pelicula-video{
+    margin-top: 1rem;
+    max-width: 760px;
+    width: 97%;
+    min-height: 240px;
+    object-fit: cover;
+    border-radius: 8px;   
+}
+/*--- Informacion de la pelicula----- */
+.pelicula-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1.5rem 0;
+    font-size: 16px;
+}
+.pelicula-info-titulo{
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 3em;    
+}
+.pelicula-texto{
+    font-size: 0.8em;
+    align-self: center;
+}
+.pelicula-fecha {
+    font-size: 0.9em;
+    align-self: center;
+}
+.pelicula-actores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+.peliculas-titulo{
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.actores {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.actores-img{
+    width: 50px;
+    border-radius: 100px;
+}
+.nombre-actores{
+    font-weight: 400;
+    font-size: 0.875rem;
+    text-align: center;
+    width: 50px;
+}
+/*---- SINOPSIS------*/
+.pelicula-sinopsis{
+    font-size: 40px;
+}
+.pelicula-sinopsis-titulo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    
+}
+.pelicula-texto-sinopsis{
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    text-align:justify;
+    font-size: 0,90em 
+}
+.contenido-relacionado{
+    color: #fff;
+    font-family: Montserrat-Regular;
+    font-size: 16px;  
+}
+.contenido-relacionado-titulo{
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    margin: 5rem 0;   
+}
+.contenido-relacionado-contenedor{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fill, 340px);
+    gap: 0.5rem;  
+}
+.contenido-relacionado-ped{
+    display: flex;
+    flex-direction: column;
+}
+.contenido-relacionado-video-titulo{
+    margin: 0.8rem 0;
+    text-align: center;
+}
+.contenido-relacionado-video{
+    border-radius: 1rem;
+    width: 340px;
+}
+.actores-img{
+    width: 120px;    
+}
+.pelicula-video{
+    width: 45%;
+    margin: 1rem;
+    margin-left: 3rem;
+    flex: 1;
+    max-width: unset;
+}
+.contenido-relacionado-ped{
+    grid-template-columns: repeat(auto-fit, 340px);
+
+}
+/*---MENU PRICIPAL ------*/
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin: 0.5rem;
+}
+.flex-container__title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+    margin: 0.8rem 0;
+    text-align: center;
+}
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, 326px);
+}
+/*----otra cosa -----*/
+.card__item {
+    position: relative;
+    width: 100%;
+    margin-top: 1.3rem;
+}
+.item-video {
+    position: absolute;
+    border-radius: 8px;
+    object-fit: unset;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.item-video:hover {
+    transform: scale(1.05, 1.05);
+    opacity: 0.5;
+}
+.item-video:hover ~ .link-details {
+    top: -31px;
+    left: -8px;
+}
+.item-video:hover ~ .wrapper-like {
+    top: -25px;
+    right: -9px;
+    animation:cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s 0.6s;
+}
+.item-video:hover ~ .check-like {
+    top: -26px;
+    right: -10px;
+}
+.link-details {
+    background-color: blueviolet;
+    color: #fff;
+    border-radius: 6px 6px 0 0;
+    position: absolute;
+    top: -26px;
+    left: 0;
+    padding: 0.3rem;
+    text-decoration: none;
+    transition: top 0.5s, left 0.5s;
+}
+
+.wrapper-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 200px;
+}
+/*----NAVBAR ------*/
+.navbar > .navbar-list {
+    list-style: none;
+    padding: 0;
+    float: right;
+    margin: 0;
+}
+.navbar-item a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+.check-like {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    opacity: 0.01;
+    cursor: pointer;
+    z-index: 1;
+    transition: top 0.5s, right 0.5s;
+}
+.wrapper-like{
+    background-color: blueviolet;
+    border-radius: 8px 8px 0 0;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 20px;
+    height: 23px;
+    z-index: -1;
+    transition: all 0.5s;
+}
+.like-icon {
+    position: absolute;
+    top: 3px;
+    right: 2px;
+}
+.clicked {
+    display: none;
+}
+.check-like:checked ~ .wrapper-like > .default {
+    display: none;
+}
+.check-like:checked ~ .wrapper-like > .clicked {
+    display: inline;
+}
+
+
